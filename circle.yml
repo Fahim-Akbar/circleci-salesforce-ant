@@ -27,5 +27,5 @@ jobs:
           working_directory: src/project 
       
       - run: 
-          name: ant -lib / -buildfile /build.xml
-          command: ant -lib / -buildfile /build.xml
+          name: ant -lib / -buildfile build.xml
+          command: ant -lib / -DeployAndCheckOnly build.xml
