@@ -1,6 +1,6 @@
 <project name="circlecideploy" default="Build" basedir="." xmlns:sf="antlib:com.salesforce">
 
-    <property file="build.${env.CIRCLE_BRANCH}.properties" />
+    <property file="build.properties">
     <property environment="env"/>
      <echo>Branch: ${env.CIRCLE_BRANCH}</echo>
 
