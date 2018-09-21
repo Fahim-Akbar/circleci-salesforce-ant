@@ -3,9 +3,7 @@
     <property file="build.properties"/>
     <property environment="env"/>
      <echo>Branch: ${env.CIRCLE_BRANCH}</echo>
-      <echo>Username: %= ENV['USERNAME'] %></echo>
-      <echo>Password:<%= ENV['PASSWORD'] %></echo>
-    
+ 
     <!-- Setting default value for username, password and session id properties to empty string 
          so unset values are treated as empty. Without this, ant expressions such as ${sf.username}
          will be treated literally.
@@ -21,7 +19,7 @@
     </taskdef>
 
      <target name="Build">
-      <sf:deploy username="$SF_USERNAME" password="$SF_PASSWORD" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/src/" rollbackOnError="true" checkOnly="false"/>
+       <sf:deploy username="${sf.username}" password="${sf.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="sales1/src/" rollbackOnError="true" checkOnly="false"/>
     </target>
   
   </project>
