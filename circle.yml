@@ -5,7 +5,12 @@ jobs:
       - image: circleci/openjdk:8-jdk
     steps:
       - checkout
-  
+      
       - run: 
+      
           name: ant
           command: ant -lib lib/ Build
+          context: PersonalBox
+          
+          
+          
