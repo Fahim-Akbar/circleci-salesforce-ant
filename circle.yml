@@ -25,11 +25,6 @@ jobs:
           name: npm Install
           command: sudo npm install
           working_directory: src/project 
-
-      - run:
-          name: bower Install
-          command: bower install bower.json
-          working_directory: src/project
       
       - run: 
           name: ant -lib lib/ -buildfile build/build.xml
