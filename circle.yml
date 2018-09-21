@@ -28,7 +28,7 @@ jobs:
 
       - run:
           name: bower Install
-          command: bower install
+          command: bower install bower.json
           working_directory: src/project
       
       - run: 
