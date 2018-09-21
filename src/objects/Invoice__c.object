@@ -40,7 +40,7 @@
     <fields>
         <fullName>Invoice_Total__c</fullName>
         <externalId>false</externalId>
-        <label>Invoice Total</label>
+        <label>x_Invoice Total</label>
         <summarizedField>Line_Item__c.Line_Item_Total__c</summarizedField>
         <summaryForeignKey>Line_Item__c.Invoice__c</summaryForeignKey>
         <summaryOperation>sum</summaryOperation>
