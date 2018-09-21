@@ -28,4 +28,4 @@ jobs:
       
       - run: 
           name: ant
-          command: ant
+          command: ant lib -/project
