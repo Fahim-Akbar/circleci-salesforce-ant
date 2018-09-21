@@ -28,4 +28,4 @@ jobs:
       
       - run: 
           name: ant -lib / -buildfile build.xml
-          command: ant -lib
+          command: ant
