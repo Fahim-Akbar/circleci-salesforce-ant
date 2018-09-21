@@ -18,8 +18,8 @@
         </classpath>
     </taskdef>
 
-      <target name="Build">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="https://test.salesforce.com" maxPoll="20" deployRoot="/src/" rollbackOnError="true" checkOnly="false"/>
+     <target name="Build">
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/src/" rollbackOnError="true" checkOnly="false"/>
     </target>
   
   </project>
