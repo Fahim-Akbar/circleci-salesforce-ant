@@ -19,7 +19,7 @@
     </taskdef>
 
       <target name="Build">
-      <sf:deploy username="${sf.username.sales1}" password="${sf.password.sales1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="sales1/src/" rollbackOnError="true" checkOnly="false"/>
+      <sf:deploy username="${sf.username.sales1}" password="${sf.password.sales1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="20" deployRoot="sales1/src/" rollbackOnError="true" checkOnly="false"/>
     </target>
   
   </project>
