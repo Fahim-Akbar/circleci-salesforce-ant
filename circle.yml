@@ -16,11 +16,6 @@ jobs:
           command: sudo npm install -g bower  
 
       - run:
-          name: npm Install
-          command: sudo npm install
-          working_directory: project/src 
-
-      - run:
           name: bower Install
           command: bower install
           working_directory: project/src
