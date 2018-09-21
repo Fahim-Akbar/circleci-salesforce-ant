@@ -28,4 +28,4 @@ jobs:
       
       - run: 
           name: ant -lib / -buildfile build.xml
-          command: ant -lib / -DeployAndCheckOnly build.xml
+          command: ant -lib / -sales1deploy build.xml
