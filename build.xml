@@ -1,4 +1,4 @@
-<project name="circlecideploy" default="sales1deploy" basedir="." xmlns:sf="antlib:com.salesforce">
+<project name="circlecideploy" default="Build" basedir="." xmlns:sf="antlib:com.salesforce">
 
     <property file="build.${env.CIRCLE_BRANCH}.properties" />
     <property environment="env"/>
@@ -18,7 +18,7 @@
         </classpath>
     </taskdef>
 
-      <target name="sales1deploy">
+      <target name="Build">
       <sf:deploy username="${sf.username.sales1}" password="${sf.password.sales1}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="sales1/src/" rollbackOnError="true" checkOnly="false"/>
     </target>
   
