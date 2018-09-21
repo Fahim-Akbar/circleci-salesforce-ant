@@ -22,7 +22,7 @@
     </taskdef>
 
      <target name="Build">
-      <sf:deploy username=$SF_USERNAME password=$SF_PASSWORD serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/src/" rollbackOnError="true" checkOnly="false"/>
+      <sf:deploy username="$SF_USERNAME" password="$SF_PASSWORD" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="/src/" rollbackOnError="true" checkOnly="false"/>
     </target>
   
   </project>
