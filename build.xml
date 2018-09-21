@@ -3,8 +3,8 @@
     <property file="build.properties"/>
     <property environment="env"/>
      <echo>Branch: ${env.CIRCLE_BRANCH}</echo>
-     <echo>$SF_USERNAME</echo>
-     <echo>$SF_PASSWORD</echo>
+     echo $SF_USERNAME
+     echo $SF_PASSWORD
 
     
     <!-- Setting default value for username, password and session id properties to empty string 
