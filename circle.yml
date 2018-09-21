@@ -7,10 +7,10 @@ jobs:
       - checkout
       
       - run: 
-          context: PersonalBox
+         
           name: ant
+          context: PersonalBox
           command: ant -lib lib/ Build
-
           
           
           
